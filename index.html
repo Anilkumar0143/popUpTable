@@ -19,15 +19,21 @@
                 <input type="text" value="anil" placeholder="name" id="fname">
             </div>
             <div class="m-2"><input type="text" value="kumar" id="lname" placeholder="lastname"></div>
-            <div class="m-2"><input type="button" id="button" value="Submit"></div>
+            <div class="m-2"><input type="button" id="button"  value="Submit"></div>
+            <!-- <div class="m-2"><input type="button" id="button" onclick = "saveUser()" value="Submit"></div> -->
         </form>
     </div>
-    <div class="containder m-4">
-        <table class="table table-default">
+    <div class="containder mx-5 px-5">
+        <div class="row justify-content-end m-2">
+            <button type="button" class="btn btn-warning" id="clearData" >Clear Data</button>
+        </div>
+        <table class="table table-default text-center">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Name</th>
                     <th>Last Name</th>
+                    <th colspan="2">Actions</th>
                 </tr>
             </thead>
             <tbody id="tbody">
